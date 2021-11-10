@@ -38,7 +38,7 @@ namespace Stack_Queues
             }
             while (temp != null) 
             {
-                Console.WriteLine(temp.data + " "); //diplaying the data untill end
+                Console.WriteLine(temp.data + " "); //diplaying the data untill end.
                 temp = temp.next;
             }
         }
