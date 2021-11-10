@@ -16,6 +16,10 @@ namespace Stack_Queues
             obj1.push(30);
             obj1.push(56);
             obj1.display();
+            obj1.peak();
+            obj1.pop();
+            obj1.IsEmpty();
+            obj1.display();
             Console.ReadLine();
         }
     }
