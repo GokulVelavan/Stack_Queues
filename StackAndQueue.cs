@@ -34,5 +34,34 @@ namespace Stack_Queues
                 temp = temp.next;
             }
         }
+
+        internal void peak()  //peak the element from top
+        {
+            if (this.top == null)
+            {
+                Console.WriteLine("\n Stack is empty..");
+                return;
+            }
+            Console.WriteLine("\n {0} is top of the stack. ", this.top.data); //dislay the top element
+        }
+
+        internal void pop()  //delete the element from the stack
+        {
+            if (this.top == null)
+            {
+                Console.WriteLine("\n Stack is Empty, Stack of top Not delete.");
+                return;
+            }
+            Console.WriteLine("\n Data popped {0} in Stack of top. ", this.top.data); 
+            this.top = this.top.next; 
+        }
+        internal void IsEmpty()
+        {
+            while (this.top != null)
+            {
+                peak();
+                pop();
+            }
+        }
     }
 }
