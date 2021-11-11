@@ -28,6 +28,27 @@ namespace Stack_Queues
             }
             Console.WriteLine("{0} inserted into Queue", node.data);
         }
+
+        internal void Dequeue() //deleting element from begining
+        {
+
+            if (this.head == null)
+            {
+                Console.WriteLine("no elements present ");
+                return;
+            }
+            else
+            {
+
+                    Node temp = head;
+                while (this.head != null)
+                {
+                  Console.WriteLine( temp.data);//diplaying node data
+                    this.head = this.head.next;
+                    temp = head;
+                }
+            }
+        }
         internal void display()  //display the elements
         {
             Node temp = this.head;

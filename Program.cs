@@ -26,6 +26,9 @@ namespace Stack_Queues
             obj1.Enqueue(30);
             obj1.Enqueue(70);
             obj1.display();
+            obj1.Dequeue();
+            obj1.display();
+
             Console.ReadLine();
         }
     }
